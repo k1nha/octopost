@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import CharacterLimitMainText from '@renderer/components/CharacterLimitMainText/CharacterLimitMainText'; // Importe o componente CharacterLimitMainText aqui
 import CustomTextArea from '@renderer/components/TextArea/TextArea'; // Importe o componente CustomTextArea aqui

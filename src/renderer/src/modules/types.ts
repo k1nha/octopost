@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { EHttpStatusCode } from '@renderer/enums/httpStatusCodes';
 import { TGenericObject } from '@renderer/types/object';
 

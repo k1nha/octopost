@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { usePostsStore } from 'stores/usePostsStore';
+import { usePostsStore } from '@renderer/stores/usePostsStore';
 
 const Testinho = ({ name = 'World' }) => {
   const posts = usePostsStore((state) => state.postsQuantity);
