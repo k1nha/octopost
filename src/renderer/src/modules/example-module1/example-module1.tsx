@@ -1,4 +1,4 @@
-import { IOctoModule, IPostMode } from 'modules/types';
+import { IOctoModule, IPostMode } from '@renderer/modules/types';
 
 import { story } from './postModes/story';
 import { Service } from './service/service';

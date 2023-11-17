@@ -1,4 +1,4 @@
-import { IPostMode } from 'modules/types';
+import { IPostMode } from '@renderer/modules/types';
 
 import { location } from '../widgets/location';
 

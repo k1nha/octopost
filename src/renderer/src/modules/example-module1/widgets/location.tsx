@@ -1,4 +1,4 @@
-import { IWidget } from 'modules/types';
+import { IWidget } from '@renderer/modules/types';
 
 const icon = (
   <svg

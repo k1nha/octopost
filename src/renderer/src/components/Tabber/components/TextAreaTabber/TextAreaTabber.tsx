@@ -12,7 +12,7 @@ function TextAreaTabber({ socialItem, selectedTab }: ITabsTabberProps) {
   );
   /* component provisório, deletar após criação do novo */
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [displayedText, setDisplayedText] = useState('');
+  const [, setDisplayedText] = useState('');
 
   const handleTextAreaChange = (
     event: React.ChangeEvent<HTMLTextAreaElement>
