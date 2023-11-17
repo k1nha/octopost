@@ -1,4 +1,4 @@
-import { defineConfig, devices } from '@playwright/test';
+import { defineConfig, devices } from '../octopost/playwright';
 
 /**
  * Read environment variables from file.

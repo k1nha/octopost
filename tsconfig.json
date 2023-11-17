@@ -1,37 +1,6 @@
 {
-  "compilerOptions": {
-    "target": "ES2022",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "src",
-    "paths": {
-      "~config/*": ["config/*"],
-      "~pages/*": ["pages/*"],
-      "~components/*": ["components/*"],
-      "~styles/*": ["styles/*"],
-      "~store/*": ["store/*"],
-      "~snippets/*": ["snippets/*"],
-      "~interfaces/*": ["interfaces/*"],
-      "~services/*": ["services/*"],
-      "~constants/*": ["constants/*"],
-      "~utils/*": ["utils/*"],
-      "~hooks/*": ["hooks/*"],
-      "~types/*": ["types/*"],
-      "~enums/*": ["enums/*"]
-    }
-  },
+  "files": [],
+  "references": [{ "path": "./tsconfig.node.json" }, { "path": "./tsconfig.web.json" }],
   "include": [
     "src/**/*", 
     "electron/**/*", 
@@ -40,6 +9,5 @@
     "tests-examples/**/*",
     "playwright/**/*",
     "e2e-testing/**/*",
-  ],
-  "exclude": ["node_modules"]
+  ]
 }
