@@ -18,19 +18,7 @@
       "@renderer/*": [
         "src/renderer/src/*"
       ],
-      "~config/*": ["renderer/src/config/*"],
-      "~pages/*": ["renderer/src/pages/*"],
-      "~components/*": ["renderer/src/components/*"],
-      "~styles/*": ["renderer/src/styles/*"],
-      "~store/*": ["renderer/src/store/*"],
-      "~snippets/*": ["renderer/src/snippets/*"],
-      "~interfaces/*": ["renderer/src/interfaces/*"],
-      "~services/*": ["renderer/src/services/*"],
-      "~constants/*": ["renderer/src/constants/*"],
-      "~utils/*": ["renderer/src/utils/*"],
-      "~hooks/*": ["renderer/src/hooks/*"],
-      "~types/*": ["renderer/src/types/*"],
-      "~enums/*": ["renderer/src/enums/*"]
+      
     }
   }
 }
