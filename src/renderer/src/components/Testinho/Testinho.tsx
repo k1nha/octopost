@@ -1,4 +1,4 @@
-import { usePostsStore } from '@renderer/stores/usePostsStore';
+/* import { usePostsStore } from 'stores/usePostsStore';
 
 const Testinho = ({ name = 'World' }) => {
   const posts = usePostsStore((state) => state.postsQuantity);
@@ -15,3 +15,4 @@ const Testinho = ({ name = 'World' }) => {
 };
 
 export default Testinho;
+ */

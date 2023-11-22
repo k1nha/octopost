@@ -1,12 +1,12 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next'
 
-import ComposerEditor from '@renderer/components/ComposerEditor/ComposerEditor';
-import '../../i18n';
+import ComposerEditor from '@renderer/components/ComposerEditor/ComposerEditor'
+import '../../i18n'
 
-import scss from './MainComposer.module.scss';
+import scss from './MainComposer.module.scss'
 
 function MainComposer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <div className={scss.wrapper}>
@@ -30,7 +30,7 @@ function MainComposer() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default MainComposer;
+export default MainComposer

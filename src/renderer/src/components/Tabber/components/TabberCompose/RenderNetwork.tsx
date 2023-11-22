@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { ITabberProps } from '@renderer/components/Tabber/Tabber.types';
 
 import TabsTabber from '../Tabs/TabsTabber';
-import TextAreaTabber from '../TextAreaTabber/TextAreaTabber';
 
 function RenderNetwork(props: ITabberProps) {
   const [selectedTab, setSelectedTab] = useState('');
@@ -19,14 +18,6 @@ function RenderNetwork(props: ITabberProps) {
         selectedTab={selectedTab}
         onTabClick={handleTabClick}
       />
-      <div>
-        {/* componente provisório, delete após novo ser construído */}
-        <TextAreaTabber
-          selectedTab={selectedTab}
-          socialItem={socialItem}
-          onTabClick={handleTabClick}
-        />
-      </div>
     </div>
   ));
 }

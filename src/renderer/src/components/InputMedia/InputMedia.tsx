@@ -1,51 +1,47 @@
-import { useRef } from 'react';
+import { useRef } from 'react'
 
-import classNames from 'classnames';
-import { nanoid } from 'nanoid';
+import classNames from 'classnames'
+import { nanoid } from 'nanoid'
 
-import scss from './InputMedia.module.scss';
+import scss from './InputMedia.module.scss'
 
-import emptyInputGrey from './assets/imageEmptyGray.svg';
+import emptyInputGrey from './assets/imageEmptyGray.svg'
 
-import { IInputMediaProps } from './InputMedia.types';
+import { IInputMediaProps } from './InputMedia.types'
 
 function InputMedia(props: IInputMediaProps) {
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
+  const fileInputRef = useRef<HTMLInputElement | null>(null)
 
   const inputClasses = classNames(scss.button, {
-    [scss.buttonSelected]: props.files,
-  });
+    [scss.buttonSelected]: props.files
+  })
 
   const handleInputClick = () => {
     if (fileInputRef.current) {
-      fileInputRef.current.value = '';
-      fileInputRef.current.click();
+      fileInputRef.current.value = ''
+      fileInputRef.current.click()
     }
-  };
+  }
 
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { files } = event.target;
+    const { files } = event.target
 
-    if (!files) return;
+    if (!files) return
 
     const validFiles = Array.from(files).filter(
       (file) => file.type.includes('image') || file.type.includes('video')
-    );
+    )
 
-    const medias = validFiles.map((file) => ({ file, id: nanoid() }));
+    const medias = validFiles.map((file) => ({ file, id: nanoid() }))
 
     if (validFiles.length > 0) {
-      props.onChange(medias);
+      props.onChange(medias)
     }
-  };
+  }
 
   const renderEmptyImagePlaceholder = () => (
-    <img
-      src={emptyInputGrey}
-      alt="image placeholder"
-      className={scss.imagePlaceholder}
-    />
-  );
+    <img src={emptyInputGrey} alt="image placeholder" className={scss.imagePlaceholder} />
+  )
 
   const renderImage = (file: File) => (
     <img
@@ -53,21 +49,19 @@ function InputMedia(props: IInputMediaProps) {
       alt={`uploaded image ${file.name}`}
       className={scss.imageSelected}
     />
-  );
+  )
 
   const renderVideo = (file: File) => (
     <video controls className={scss.imageSelected}>
       <source src={URL.createObjectURL(file)} type={file.type} />
     </video>
-  );
+  )
 
   const renderMedia = () => {
-    if (!props.files) return;
+    if (!props.files) return
 
-    return props.files.type.includes('image')
-      ? renderImage(props.files)
-      : renderVideo(props.files);
-  };
+    return props.files.type.includes('image') ? renderImage(props.files) : renderVideo(props.files)
+  }
 
   return (
     <button className={inputClasses} onClick={handleInputClick}>
@@ -82,7 +76,7 @@ function InputMedia(props: IInputMediaProps) {
       />
       {props.files ? renderMedia() : renderEmptyImagePlaceholder()}
     </button>
-  );
+  )
 }
 
-export default InputMedia;
+export default InputMedia

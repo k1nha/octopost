@@ -1,4 +1,4 @@
-# octopost
+# bankoovi
 
 An Electron application with React and TypeScript
 
@@ -11,24 +11,24 @@ An Electron application with React and TypeScript
 ### Install
 
 ```bash
-$ yarn
+$ npm install
 ```
 
 ### Development
 
 ```bash
-$ yarn dev
+$ npm run dev
 ```
 
 ### Build
 
 ```bash
 # For windows
-$ yarn build:win
+$ npm run build:win
 
 # For macOS
-$ yarn build:mac
+$ npm run build:mac
 
 # For Linux
-$ yarn build:linux
+$ npm run build:linux
 ```
