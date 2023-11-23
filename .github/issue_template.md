@@ -1,19 +1,14 @@
----
-name: Bug report
-about: Create a new bug report to help us improve Octopost
-title: ''
-labels: ''
-assignees: ''
+## [Issue Title]
 
----
+_label: [tag1, tag2] 
+<br>
+assignees: [assignee_username]_
 
-**Describe the bug**
-A short description of what the bug is.
 <details open> 
   <summary>
     <b>Description</b>
   </summary>
-   [Describe the bug reported]
+   [Describe the issue or feature requested]
 </details>
 
 <br>
@@ -23,7 +18,7 @@ A short description of what the bug is.
     <b>Steps to Reproduce</b>
   </summary>
 
-[If applicable, provide detailed steps to reproduce the bug.]
+  [If applicable, provide detailed steps to reproduce the issue.]
 
 </details>
 
@@ -33,7 +28,7 @@ A short description of what the bug is.
   <summary>
     <b>Expected Behavior</b>
   </summary>
-  [Describe what is expected to happen.]
+  [Describe what you expect to happen.]
 </details>
 
 <br>
@@ -51,7 +46,7 @@ A short description of what the bug is.
   <summary>
     <b>Visual information</b>
   </summary>
-  [If possible, add screenshots to illustrate this bug.]
+  [If possible, add screenshots to illustrate the issue.]
 </details>
 
 <br>
@@ -60,6 +55,6 @@ A short description of what the bug is.
   <summary>
     <b>Additional Information</b>
   </summary>
-  [Provide any additional information, such as relevant versions, browser, OS, context, etc.]
+  [Provide any additional information, such as relevant versions, context, etc.]
 
 </details>
