@@ -1,48 +1,45 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
-import { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion'
 
-import ToggleSocialMedia from '~components/ToggleSocialMedia/ToggleSocialMedia';
+import ToggleSocialMedia from '../../../../../../components/ToggleSocialMedia/ToggleSocialMedia'
 
-import scss from './SocialAccordion.module.scss';
+import scss from './SocialAccordion.module.scss'
 
-import iconPlaceholderForIcon from './assets/facebook.svg';
+import iconPlaceholderForIcon from './assets/facebook.svg'
 
-import { ISocialAccordion } from './SocialAccordion.type';
+import { ISocialAccordion } from './SocialAccordion.type'
 
 const accordionVariants = {
   expanded: {
     height: 'auto',
-    transition: { duration: 0.3 },
+    transition: { duration: 0.3 }
   },
-  collapsed: { height: 0, transition: { duration: 0.3 } },
-};
+  collapsed: { height: 0, transition: { duration: 0.3 } }
+}
 
 function SocialAccordion(props: ISocialAccordion) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true)
 
-  const openLabel = isOpen ? 'open' : 'closed';
+  const openLabel = isOpen ? 'open' : 'closed'
 
-  const handleOpenAccordion = () => setIsOpen((prev) => !prev);
+  const handleOpenAccordion = () => setIsOpen((prev) => !prev)
 
-  const renderError = () => <span className={scss.error}>error!!!!</span>;
+  const renderError = () => <span className={scss.error}>error!!!!</span>
 
   const renderAccountQuantity = () => (
     <>
       <span>{props.accountList.length}+</span>
       <p>{openLabel}</p>
     </>
-  );
+  )
 
   const renderAccordionMap = () =>
     props.accountList.map((accounts) => (
       <li key={accounts.id}>
-        <ToggleSocialMedia
-          accountName={accounts.username}
-          accountImage={accounts.image}
-        />
+        <ToggleSocialMedia accountName={accounts.username} accountImage={accounts.image} />
       </li>
-    ));
+    ))
 
   const renderAccordionContent = () => (
     <motion.ul
@@ -57,7 +54,7 @@ function SocialAccordion(props: ISocialAccordion) {
     >
       {renderAccordionMap()}
     </motion.ul>
-  );
+  )
 
   return (
     <div className={scss.wrapper}>
@@ -80,7 +77,7 @@ function SocialAccordion(props: ISocialAccordion) {
       </button>
       <AnimatePresence>{isOpen && renderAccordionContent()}</AnimatePresence>
     </div>
-  );
+  )
 }
 
-export default SocialAccordion;
+export default SocialAccordion

@@ -31,7 +31,16 @@ function Sidebar() {
           />
         )}
 
-        <div className={scss.itemsContainer}></div>
+        <div className={scss.itemsContainer}>
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+          Item 1 <br /> Item2 <br /> Item 1 <br /> Item2 <br />
+        </div>
       </div>
     </aside>
   )
