@@ -1,3 +1,4 @@
+import FirstComment from '@renderer/components/FirstComment/FirstComment'
 import MainComposer from '../../components/MainComposer/MainComposer'
 import MediaInputs from '../../components/MediaInputs/MediaInput'
 import SavBar from '../../components/SavBar/SavBar'
@@ -8,7 +9,7 @@ import Header from './components/Header/Header'
 import Sidebar from './components/Sidebar/Sidebar'
 
 import scss from './home.module.scss'
-const Home = () => {
+function Home() {
   return (
     <>
       <Header />
@@ -20,7 +21,7 @@ const Home = () => {
           <div className={scss.gridInput}>
             <MainComposer />
             <MediaInputs />
-            {/* <FirstComment /> */}
+            <FirstComment />
           </div>
           <div className={scss.gridTabs} />
         </div>
